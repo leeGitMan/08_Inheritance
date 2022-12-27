@@ -7,7 +7,7 @@ public class InheritanceRun {
 		
 		InheritanceSerivce is = new InheritanceSerivce();
 		
-		is.ex3();
+		is.ex1();
 		
 	
 	}

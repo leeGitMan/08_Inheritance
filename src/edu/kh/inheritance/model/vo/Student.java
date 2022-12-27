@@ -24,7 +24,7 @@ public class Student extends Person {
 		// 말 그대로 super위에 아무것도 있으면 안됨.
 		
 		
-		// super() 생성자 미작성 시
+		// super()  생성자 미작성 시
 		// 컴파일러가 컴파일 단계에서 자동으로 추가해줌
 		
 	}
@@ -33,7 +33,7 @@ public class Student extends Person {
 	public Student(String name, int age, String nationality, int grade, int classRoom) {
 		
 		
-		super(name, age, nationality);
+		super(name, age, nationality); //매개변수 순서, 타입, 개수 동일  
 		this.grade = grade;
 		this.classRoom = classRoom;
 		
@@ -69,7 +69,7 @@ public class Student extends Person {
 	
 	@Override
 	
-	public String toString() {
+	public String toString() {  
 		return super.toString() + " / " + grade + " / " + classRoom;
 		
 	}

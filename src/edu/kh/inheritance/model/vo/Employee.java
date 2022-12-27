@@ -12,7 +12,7 @@ public class Employee extends Person {
 	}
 
 	public Employee(String name, int age, String nationality, String company) {
-		super(name, age, nationality);
+		super(name, age, nationality);  // 매개변수 순서,타입,개수 동일
 		
 		this.company = company;
 		
@@ -58,6 +58,11 @@ public class Employee extends Person {
 	// 예외처리 범위는 같거나 더 좁게 <=
 	
 	// 부모의 private 메서드는 오버라이딩 불가능
+	
+	// 다시 알게 된 것 : 부모로부터 상속 받지 못하는 건 초기화 블록, 부모 생성자, private으로 선언된 필드인줄 알았으나,  그게아니엿다.
+	// private 멤버 변수들은 상속은 되지만 직접 접근 제한 원칙으로 인해서, 자식 생성자가 부모 필드 영역 멤버변수에 접근 불가
+	// 그래서 super()를 통해서 전달 받은 필드값을 부모 생성자쪽으로 넘겨서 생성하거나 getter setter로 접근
+	
 	
 	
 	@Override

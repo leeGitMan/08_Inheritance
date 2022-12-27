@@ -23,7 +23,7 @@ public class Person {
 		return name; // 리턴 꼭 기억하자...
 	}
 
-	public void setName(String name) { // 받아오는 애가 있기에 매개변수를 작서앟고 this작성
+	public void setName(String name) { // 받아오는 애가 있기에 매개변수를 작성하고 this작성
 		this.name = name;
 	}
 
